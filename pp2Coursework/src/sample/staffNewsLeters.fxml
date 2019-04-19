@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newsLeters" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewsLeters">
+    <children>
+        <TextField fx:id="subject" layoutX="48.0" layoutY="65.0" prefHeight="31.0" prefWidth="704.0" promptText="Subject" />
+        <TextArea fx:id="body" layoutX="48.0" layoutY="115.0" prefHeight="329.0" prefWidth="704.0" promptText="Body of the newsletter" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" />
+        <Button layoutX="603.0" layoutY="455.0" mnemonicParsing="false" onAction="#sendNewsLetters" prefHeight="31.0" prefWidth="149.0" text="Send" />
+        <Button layoutX="48.0" layoutY="455.0" mnemonicParsing="false" onAction="#switchtoStaffMain" prefHeight="31.0" prefWidth="149.0" text="Back" />
+        <Label layoutX="258.0" layoutY="14.0" prefHeight="21.0" prefWidth="284.0" text="Customer News Letters">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Label fx:id="emailStatus" layoutX="287.0" layoutY="460.0" prefHeight="21.0" prefWidth="226.0" />
+    </children>
+</AnchorPane>
